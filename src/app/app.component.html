@@ -1,0 +1,15 @@
+<nav class='nav'>
+  <a class='nav-link' href="" [routerLink]="['employee']">Employee</a>
+  <a class='nav-link' href="" [routerLink]="['device']">Device</a>
+  <div *ngFor="let eployee of myemployees">
+    <button type="button" (click)="getdata(employee.name)">Employee</button>
+
+
+  </div>
+
+  <div *ngFor="let device of mydevices">
+    <button type="button" (click)="getdevices(device.serial)">Devices</button>
+  </div>
+
+</nav>
+<router-outlet></router-outlet>

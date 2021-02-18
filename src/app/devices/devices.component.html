@@ -1,0 +1,11 @@
+<div *ngFor="let Device of devices">
+    <p [routerLink]="['device', device.description, device.type]">{{device.serial}}</p>
+    <button class='btn btn-primary' (click)="navigate(alldevices)">See all devices</button>
+
+
+
+    </div>
+
+
+    <p>------------</p>
+    <router-outlet></router-outlet>

@@ -1,0 +1,9 @@
+<div *ngFor="let Employee of employees">
+    <p [routerLink]="['employee', employee.id, employee.email]">{{employee.name}}</p>
+    <button class='btn btn-primary' (click)="navigate2(employeedetails)">See details</button>
+    <button class='btn btn-primary' (click)="navigate(empployeedevices)">See devices</button>
+    </div>
+
+
+    <p>------------</p>
+    <router-outlet></router-outlet>
